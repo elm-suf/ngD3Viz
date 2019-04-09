@@ -1,0 +1,15 @@
+<div class="container">
+  <svg [attr.height]="height"
+       [attr.width]="width">
+
+    <rect (click)="itemClick(item)"
+          (mouseleave)="hide(item.line)" (mouseover)="mouseOverItem(item)"
+          *ngFor="let item of data; let i = index" [attr.height]="item.height"
+          [attr.width]="item.width"
+          [attr.x]="item.x"
+          [attr.y]="item.y"
+          transform="translate(24, 24)"
+    >
+    </rect>
+  </svg>
+</div>

@@ -1,0 +1,26 @@
+rect:hover {
+  fill: crimson;
+  width: 20px;
+}
+
+.container {
+  margin: 20px;
+  border: black;
+  border-width: thick;
+}
+
+svg {
+  background: #35495E;
+
+}
+
+rect {
+  fill: #41b883;
+  border: #35495E;
+
+}
+
+line,
+rect {
+  transition: all 500ms ease;
+}
