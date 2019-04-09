@@ -1,0 +1,16 @@
+<div>
+  <svg [attr.height]="height" [attr.width]="width" class="scatter-plot">
+
+    <circle (mouseleave)="hideLine(item.lineV, item.lineH)"
+            (mouseover)="mouseOverItem(item)"
+            *ngFor="let item of dataset"
+            [attr.cx]="xScale(item.year)"
+            [attr.cy]="yScale(item.seconds)"
+            r="12"
+            transform="translate(48, 48)"
+    >
+
+    </circle>
+  </svg>
+
+</div>
