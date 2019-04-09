@@ -1,0 +1,10 @@
+<div class="container">
+  <svg height="360" width="600">
+    <path [attr.d]="lineGenerator()" fill="none" stroke="yellow" stroke-width="5"/>
+    <circle (click)="itemClicked(item)"
+            *ngFor="let item of dataset;index as index"
+            [attr.cx]="item[0]" [attr.cy]="item[1]" [attr.data-index]="index"
+            r="16">
+    </circle>
+  </svg>
+</div>
