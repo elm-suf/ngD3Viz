@@ -1,9 +1,7 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 
 import * as d3 from 'd3';
 import {shuffle} from 'd3';
-import {ChartDatasetsService} from '../../services/chart-datasets.service';
 
 @Component({
   selector: 'app-test',
@@ -16,7 +14,7 @@ export class TestComponent implements OnInit, AfterViewInit {
   dataFromService: any[];
 
 
-  constructor(private http: HttpClient, private serv: ChartDatasetsService) {
+  constructor() {
   }
 
   ngOnInit() {
