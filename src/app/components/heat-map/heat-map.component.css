@@ -1,0 +1,24 @@
+/*.tooltip{*/
+/*  background: crimson;*/
+/*}*/
+
+rect:hover {
+  fill: crimson;
+  width: 20px;
+}
+
+svg {
+  /*background: #35495E;*/
+  background: #41b883;
+
+}
+
+.test {
+  fill: #41b883;
+  stroke: #35495E;
+}
+
+line,
+rect {
+  transition: all 500ms ease;
+}

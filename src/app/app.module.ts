@@ -10,6 +10,7 @@ import {ScatterPlotComponent} from './components/scatter-plot/scatter-plot.compo
 import {TemperatureService} from './services/temperature.service';
 import {HeatMapComponent} from './components/heat-map/heat-map.component';
 import {FormsModule} from '@angular/forms';
+import {D3Service} from 'd3-ng2-service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import {FormsModule} from '@angular/forms';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [TemperatureService],
+  providers: [D3Service, TemperatureService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

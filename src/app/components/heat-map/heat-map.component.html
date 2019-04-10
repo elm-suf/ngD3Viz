@@ -1,10 +1,6 @@
 <div class="container">
-  <!--  <p>-->
-  <!--    {{myData$ |async | json}}-->
-  <!--  </p>-->
+  <svg [attr.height]="height" [attr.width]="width">
+  </svg>
 
-
-  <li *ngFor="let item of myTempdata.monthlyVariance">
-    {{item | json}}
-  </li>
+  <div class="col-8" id="tooltip"><h1 id="title">TOOLTIP</h1></div>
 </div>
