@@ -18,7 +18,7 @@ export class HeatMapComponent implements OnInit {
 
   private d3: D3; // <-- Define the private member which will hold the d3 reference
   private parentNativeElement: any;
-  private height: any;
+  private height: number;
   private width: number;
 
   constructor(element: ElementRef,

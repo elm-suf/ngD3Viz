@@ -11,6 +11,7 @@ import {TemperatureService} from './services/temperature.service';
 import {HeatMapComponent} from './components/heat-map/heat-map.component';
 import {FormsModule} from '@angular/forms';
 import {D3Service} from 'd3-ng2-service';
+import {ChoroplethMapComponent} from './components/choropleth-map/choropleth-map.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {D3Service} from 'd3-ng2-service';
     TestComponent,
     ScatterPlotComponent,
     HeatMapComponent,
+    ChoroplethMapComponent,
   ],
   imports: [
     BrowserModule,
